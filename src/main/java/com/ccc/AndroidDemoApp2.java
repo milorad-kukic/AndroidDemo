@@ -5,10 +5,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.geometry.Rectangle2D;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.ScrollPane.ScrollBarPolicy;
-import javafx.scene.layout.HBox;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 
@@ -26,8 +24,6 @@ public class AndroidDemoApp2 extends Application {
     
     @Override
     public void start(Stage mainStage) throws Exception {
-        HBox hbox = new HBox();
-        hbox.getChildren().add(new Label("TestApp"));
         Screen screen = Screen.getPrimary();
         Rectangle2D bounds = screen.getVisualBounds();
         
