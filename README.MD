@@ -12,10 +12,10 @@ AndroidDemoApp.java
 
 This application demonstrates following issues:
 
-Screen rotation
+- **Screen rotation**
 :   When screen is rotated, form can not be scrolled (part of the form is not visible).
 
-Editing field on bottom of the screen
+- **Editing field on bottom of the screen**
 :   When editing income field, editing field is not visible. When keyboard is closed, form title is not visible any more.
 
 AndroidDemoApp2.java
@@ -27,12 +27,12 @@ Loaded FXML is added to ScrollPane. Is this way to go?
 **Other issues**
 -------------------
 
-Platform.exit()
+- **Platform.exit()**
 : On cancel button click, Platform.exit() is called. Result is black screen. Application can't be started again, I must kill it.
 
-DatePicker component 
+- **DatePicker component**
 : Date picker crash application if I rotate screen and try to open date picker.
 
-Blurred components
+- **Blurred components**
 :  When I rotate screen and start to scroll, some labels and controls 
 
