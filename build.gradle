@@ -1,3 +1,5 @@
+import java.lang.invoke.LambdaForm.Compiled;
+
 apply plugin: 'java'
 apply plugin: 'eclipse'
 
@@ -10,11 +12,16 @@ jar {
 }
 
 repositories {
+    
+    flatDir {
+        dirs "${rootProject.projectDir}/lib"
+    }
+    
     mavenCentral()
 }
 
 dependencies {
-    compile group: 'commons-collections', name: 'commons-collections', version: '3.2'
+    compile fileTree(dir: 'lib', include: ['*.jar'])
     testCompile group: 'junit', name: 'junit', version: '4.+'
 }
 
