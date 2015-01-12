@@ -23,6 +23,11 @@ AndroidDemoApp2.java
 
 Loaded FXML is added to ScrollPane. Is this way to go?
 
+AndroidDemoApp3.java
+-------------------
+
+Demonstration of using 3rd party calendar. Used calendar is from project: https://bitbucket.org/sco0ter/extfx
+
 
 **Other issues**
 -------------------
