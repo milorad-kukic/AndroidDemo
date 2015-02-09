@@ -1,38 +1,38 @@
-import java.lang.invoke.LambdaForm.Compiled;
+buildscript{
+    repositories {
+        
+        flatDir {
+            dirs "${rootProject.projectDir}/lib"
+        }
+        
+        jcenter()
+    }
 
-apply plugin: 'java'
-apply plugin: 'eclipse'
-
-sourceCompatibility = 1.8
-version = '1.0'
-jar {
-    manifest {
-        attributes 'Implementation-Title': 'Gradle Quickstart', 'Implementation-Version': version
+    dependencies {
+        classpath 'org.javafxports:javafxmobile-plugin:1.0.0-rc1'
+        classpath fileTree(dir: 'lib', include: ['*.jar'])
     }
 }
 
+apply plugin: 'javafxmobile'
+
+mainClassName = 'com.ccc.AndroidDemoApp3'
+
 repositories {
-    
     flatDir {
         dirs "${rootProject.projectDir}/lib"
     }
     
-    mavenCentral()
+    jcenter()
 }
 
 dependencies {
     compile fileTree(dir: 'lib', include: ['*.jar'])
-    testCompile group: 'junit', name: 'junit', version: '4.+'
 }
 
-test {
-    systemProperties 'property': 'value'
-}
-
-uploadArchives {
-    repositories {
-       flatDir {
-           dirs 'repos'
-       }
+jfxmobile {
+    android {
+        androidSdk = file ('/home/miko/Android/Sdk')
+        applicationPackage = 'com.ccc'
     }
 }
