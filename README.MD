@@ -32,10 +32,10 @@ Demonstration of using 3rd party calendar. Used calendar is from project: https:
 **Other issues**
 -------------------
 
-- **Platform.exit()**
+- ~~**Platform.exit()**~~
 : On cancel button click, Platform.exit() is called. Result is black screen. Application can't be started again, I must kill it.
 
-- **DatePicker component**
+- ~~**DatePicker component**~~
 : Date picker crash application if I rotate screen and try to open date picker.
 
 - **Blurred components**
