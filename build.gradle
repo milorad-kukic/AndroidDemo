@@ -9,12 +9,12 @@ buildscript{
     }
 
     dependencies {
-        classpath 'org.javafxports:javafxmobile-plugin:1.0.0-rc1'
+        classpath 'org.javafxports:jfxmobile-plugin:1.0.0-b4'
         classpath fileTree(dir: 'lib', include: ['*.jar'])
     }
 }
 
-apply plugin: 'javafxmobile'
+apply plugin: 'org.javafxports.jfxmobile'
 
 mainClassName = 'com.ccc.AndroidDemoApp3'
 
@@ -32,7 +32,7 @@ dependencies {
 
 jfxmobile {
     android {
-        androidSdk = file ('/home/miko/Android/Sdk')
+        // androidSdk = file ('/home/miko/Android/Sdk')
         applicationPackage = 'com.ccc'
     }
 }
