@@ -49,9 +49,9 @@
           <ComboBox fx:id="country" layoutX="109.0" layoutY="313.0" prefHeight="25.0" prefWidth="237.0" GridPane.columnIndex="1" GridPane.rowIndex="8">
             <items>
               <FXCollections fx:factory="observableArrayList">
-                <String fx:value="Item 1" />
-                <String fx:value="Item 2" />
-                <String fx:value="Item 3" />
+                <String fx:value="Greece" />
+                <String fx:value="Lebanon" />
+                <String fx:value="Serbia" />
               </FXCollections>
             </items>
           </ComboBox>
