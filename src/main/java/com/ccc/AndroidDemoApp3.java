@@ -38,6 +38,7 @@ public class AndroidDemoApp3 extends Application {
             ScrollPane scroller = new ScrollPane(root);
             scroller.hbarPolicyProperty().set(ScrollBarPolicy.AS_NEEDED);
             scroller.vbarPolicyProperty().set(ScrollBarPolicy.AS_NEEDED);
+            scroller.setSnapToPixel(false);
             mainStage.setScene(new Scene(scroller));
         } catch (Exception e) {
             e.printStackTrace();
