@@ -38,6 +38,6 @@ Demonstration of using 3rd party calendar. Used calendar is from project: https:
 - ~~**DatePicker component**~~
 : Date picker crash application if I rotate screen and try to open date picker.
 
-- **Blurred components**
+- ~~**Blurred components**~~
 :  When I rotate screen and start to scroll, some labels and controls 
 
