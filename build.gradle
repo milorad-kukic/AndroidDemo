@@ -24,6 +24,10 @@ repositories {
     }
     
     jcenter()
+    maven {
+        url "https://oss.sonatype.org/content/repositories/snapshots/"
+    }
+
 }
 
 dependencies {
@@ -31,7 +35,7 @@ dependencies {
 }
 
 jfxmobile {
-    javafxportsVersion = "8u40-b4"
+    javafxportsVersion = "8u40-b5-SNAPSHOT"
     android {
         // androidSdk = file ('/home/miko/Android/Sdk')
         applicationPackage = 'com.ccc'
