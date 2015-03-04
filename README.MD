@@ -12,7 +12,7 @@ AndroidDemoApp.java
 
 This application demonstrates following issues:
 
-- **Screen rotation**
+- ~~**Screen rotation**~~
 :   When screen is rotated, form can not be scrolled (part of the form is not visible).
 
 - **Editing field on bottom of the screen**
