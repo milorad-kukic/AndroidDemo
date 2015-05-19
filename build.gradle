@@ -45,5 +45,6 @@ jfxmobile {
     }
     ios {
         iosSdk='/opt/ios-sdk'
+        forceLinkClasses = ['com.ccc.**.*']
     }
 }
