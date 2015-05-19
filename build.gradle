@@ -1,5 +1,8 @@
 buildscript{
     repositories {
+    maven {
+        url "https://oss.sonatype.org/content/repositories/snapshots/"
+    }
         
         flatDir {
             dirs "${rootProject.projectDir}/lib"
@@ -9,7 +12,7 @@ buildscript{
     }
 
     dependencies {
-        classpath 'org.javafxports:jfxmobile-plugin:1.0.0-b4'
+        classpath 'org.javafxports:jfxmobile-plugin:1.0.0-b9-SNAPSHOT'
         classpath fileTree(dir: 'lib', include: ['*.jar'])
     }
 }
@@ -35,9 +38,12 @@ dependencies {
 }
 
 jfxmobile {
-    javafxportsVersion = "8u40-b5-SNAPSHOT"
+    javafxportsVersion = "8u60-b2-SNAPSHOT"
     android {
         // androidSdk = file ('/home/miko/Android/Sdk')
         applicationPackage = 'com.ccc'
+    }
+    ios {
+        iosSdk='/opt/ios-sdk'
     }
 }
