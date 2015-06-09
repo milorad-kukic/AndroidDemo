@@ -1,16 +1,10 @@
 buildscript{
     repositories {
-        
-        flatDir {
-            dirs "${rootProject.projectDir}/lib"
-        }
-        
         jcenter()
     }
 
     dependencies {
-        classpath 'org.javafxports:jfxmobile-plugin:1.0.0-b4'
-        classpath fileTree(dir: 'lib', include: ['*.jar'])
+        classpath 'org.javafxports:jfxmobile-plugin:1.0.0-b9'
     }
 }
 
@@ -19,15 +13,7 @@ apply plugin: 'org.javafxports.jfxmobile'
 mainClassName = 'com.ccc.AndroidDemoApp3'
 
 repositories {
-    flatDir {
-        dirs "${rootProject.projectDir}/lib"
-    }
-    
     jcenter()
-    maven {
-        url "https://oss.sonatype.org/content/repositories/snapshots/"
-    }
-
 }
 
 dependencies {
@@ -35,9 +21,11 @@ dependencies {
 }
 
 jfxmobile {
-    javafxportsVersion = "8u40-b5-SNAPSHOT"
     android {
         // androidSdk = file ('/home/miko/Android/Sdk')
         applicationPackage = 'com.ccc'
+    }
+    ios {
+        forceLinkClasses = ['com.ccc.**.*']
     }
 }

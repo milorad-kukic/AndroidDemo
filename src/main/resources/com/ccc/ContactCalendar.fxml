@@ -6,8 +6,6 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.*?>
-<?import jfxtras.labs.scene.control.*?>
-<?import extfx.scene.control.DatePicker?>
 
 <AnchorPane prefHeight="519.0" prefWidth="389.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ccc.ContactController">
   <!-- TODO Add Nodes -->
